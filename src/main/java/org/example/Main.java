@@ -16,7 +16,7 @@ public class Main
         while(!isValid){
             System.out.print ( "Enter the password: " );
             password = scanner.nextLine();
-            if(passwordChecker.isValid(password)){
+            if(passwordChecker.checkValid(password)){
                 isValid = true;
             }
         }

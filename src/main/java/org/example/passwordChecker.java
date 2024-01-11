@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class passwordChecker {
 
-    public boolean isValid(String password){
+    public boolean checkValid(String password){
         if (password.length() <7 || password.length() > 12){
             return false;
         }

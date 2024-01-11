@@ -9,15 +9,15 @@ public class Main
 {
     public static void main( String[] args )
     {
-        boolean valid = false;
+        boolean isValid = false;
         Scanner scanner = new Scanner(System.in);
         passwordChecker passwordChecker = new passwordChecker();
         String password = "";
-        while(!valid){
+        while(!isValid){
             System.out.print ( "Enter the password: " );
             password = scanner.nextLine();
-            if(passwordChecker.isValid(password)){
-                valid = true;
+            if(passwordChecker.checkValid(password)){
+                isValid = true;
             }
         }
 
